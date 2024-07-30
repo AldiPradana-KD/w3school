@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h2>The picture Element</h2>
+
+<picture>
+  <source media="(min-width: 650px)" srcset="gg.jpeg">
+  <source media="(min-width: 465px)" srcset="gg.jpeg">
+  <img src="gg.jpeg" style="width:auto;">
+</picture>
+
+<p>Ubah ukuran browser untuk melihat versi gambar yang berbeda yang dimuat
+    pada ukuran viewport yang berbeda. Browser mencari elemen sumber pertama
+    tempat kueri media cocok dengan lebar viewport pengguna saat ini, dan mengambil
+    gambar yang ditentukan dalam atribut srcset.</p>
+
+<p>Elemen img diperlukan sebagai tag anak terakhir dari blok deklarasi gambar.
+    Elemen img digunakan untuk menyediakan kompatibilitas mundur bagi peramban yang tidak
+    mendukung elemen gambar, atau jika tidak ada tag sumber yang cocok.
+</p>
+
+</body>
+</html>
